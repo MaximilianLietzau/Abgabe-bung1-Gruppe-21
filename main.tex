@@ -73,7 +73,7 @@ Für die Erstellung der Datenbank haben wir folgende SQL Befehle genutzt:
 \subsection{Import der Daten}
 Zur Vorbereitung auf das Importieren der Daten, haben wir die CSV Datei mit Excel geöffnet. In Excel haben wir dann nach ungültigen Werten gesucht. An Tag 99 fehlten beispielsweise die Werte für den Niederschlag und die durchschnittliche Temperatur. Die fehlenden Werte für den Wochentag, Monat und Tag des Jahres können sehr einfach ergänzt werden, da diese immer fortlaufend sind, bzw sich immer wiederholen und daher genau zu bestimmen sind. Für die fehlenden Werte der Durchschnittstemperatur haben wir die niedrigste und die höchste Temperatur des Tages addiert und durch 2 geteilt. Für die fehlenden Werte der niedrigsten und der höchsten Tagestemperatur haben wir dies ähnlich gemacht und ungefähre Werte geschätzt. Außerdem haben wir die Werte der umliegenden Tage in unserer Schätzung berücksichtigt. Es gab zudem auch einige negative Werte, welche entweder keinen Sinn ergeben haben. Es kann beispielsweise nicht -1 Fahrrad vermietet werden und wenn die niedrigste Temperatur positiv ist, kann die höchste nicht negativ sein.
 Zur Vereinfachung haben wir nun aus der Excel Tabelle insgesamt 3 Tabellen gemacht, um diese dann in die richtigen Datenbank einspielen zu können. In diesen Tabellen haben wir dann auch die noch fehlenden Primärschlüssel definiert. 
-Dann haben wir die Daten mit ",import" in die Datenbanken eingespielt. 
+Dann haben wir die Daten mit ".import" in die Datenbanken eingespielt. 
 
 \subsection{Abfrage der höchsten Durchschnittstemperatur}
 
@@ -92,6 +92,11 @@ Für die Abfrage der höchsten Durchschnittstemperatur benutzen wir die Befehle
 \caption{Die Abfrage umgerechnet in Grad Celsius}
 \label{fig:meine-grafik4}
 \end{figure}
+
+\subsection{Github}
+
+Der Latex Code für unser PDF kann auf Github unter folgendem Link gefunden werden.
+\url{https://github.com/MaximilianLietzau/Abgabeuebung1-Gruppe-21-COMET}
 
 \begin{thebibliography}{9}
 \bibitem{Klenke2013}
