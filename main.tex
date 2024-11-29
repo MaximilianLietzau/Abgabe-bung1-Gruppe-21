@@ -7,7 +7,7 @@
 \usepackage{listings}
 
 \title{Abgabe 1 für Computergestützte Methoden}
-\author{Gruppe 21, 4371147 Maximilian Lietzau, 4166459 Louis Koch)}
+\author{Gruppe 21, 4371147 Maximilian Lietzau, 4166459 Louis Koch}
 \date{02.12.2024}
 
 \begin{document}
@@ -48,12 +48,12 @@ Der ZGS wird in vielen Bereichen der Statistik und der Wahrscheinlichkeitstheori
 \section{Bearbeitung zur Aufgabe 1}
 
 \subsection{Thema Datenverarbeitung}
-Zuerst haben wir die CSV-Datei in die Tabellenkalkulation Excel eingespielt. Da die Daten alle zusammen in einer Spalte standen mussten wir diese mit dem Befehl Text in Spalten trennen, sodass wir für jedes Komma eine eigene Spalte erhalten haben. Hierbei mussten wir beachten, dass die Nachkommastellen in der Amerikanischen Schreibweise durch einen Punkt getrennt werden. Dann haben wir die für unsere Gruppe nicht relevanten Datensätze gelöscht. Im nächsten Schritt haben wir nun mit dem Befehl \textit{MAX(J2:J366)} die höchste durchschnittliche Temperatur ermittelt. Diese beträgt für unsere Gruppe 83° Fahrenheit. Für die Datenpunkte 99 und 343 gab es für die maximale durchschnittliche Temperatur keine Werte, an den Tagen davor und danach waren die Werte allerdings signifikant niedriger, sodass es ausgeschlossen ist, dass die Temperatur an diesen Tagen höher war. Mit dem Befehl \textit{UMWANDELN(D369; "F";"C")} Haben wir dann wie in der Aufgabe gefordert die Temperatur in Grad Celsius umgewandelt. Für unsere Gruppe beträgt die maximale durchschnittliche Temperatur 28,33 ° Celsius 
+Zuerst haben wir die CSV-Datei in die Tabellenkalkulation Excel eingespielt. Da die Daten alle zusammen in einer Spalte standen mussten wir diese mit dem Befehl Text in Spalten trennen, sodass wir für jedes Komma eine eigene Spalte erhalten haben. Hierbei mussten wir beachten, dass die Nachkommastellen in der Amerikanischen Schreibweise durch einen Punkt getrennt werden. Dann haben wir die für unsere Gruppe nicht relevanten Datensätze gelöscht. Im nächsten Schritt haben wir nun mit dem Befehl \textit{MAX(J2:J366)} die höchste durchschnittliche Temperatur ermittelt. Diese beträgt für unsere Gruppe 83° Fahrenheit. Für die Datenpunkte 99 und 343 gab es für die maximale durchschnittliche Temperatur keine Werte, an den Tagen davor und danach waren die Werte allerdings signifikant niedriger, sodass es ausgeschlossen ist, dass die Temperatur an diesen Tagen höher war. Mit dem Befehl \textit{UMWANDELN(D369; "F";"C")} Haben wir dann wie in der Aufgabe gefordert die Temperatur in Grad Celsius umgewandelt. Für unsere Gruppe beträgt die maximale durchschnittliche Temperatur 28,33 ° Celsius. 
 
 \subsection{Thema Datenhaltung}
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.5]{Datenbankschema.png}
+\includegraphics[scale=.4]{Datenbankschema.png}
 \caption{Datenbankschema}
 \label{fig:meine-grafik}
 \end{figure}
@@ -73,11 +73,11 @@ Für die Erstellung der Datenbank haben wir folgende SQL Befehle genutzt:
 \subsection{Import der Daten}
 Zur Vorbereitung auf das Importieren der Daten, haben wir die CSV Datei mit Excel geöffnet. In Excel haben wir dann nach ungültigen Werten gesucht. An Tag 99 fehlten beispielsweise die Werte für den Niederschlag und die durchschnittliche Temperatur. Die fehlenden Werte für den Wochentag, Monat und Tag des Jahres können sehr einfach ergänzt werden, da diese immer fortlaufend sind, bzw sich immer wiederholen und daher genau zu bestimmen sind. Für die fehlenden Werte der Durchschnittstemperatur haben wir die niedrigste und die höchste Temperatur des Tages addiert und durch 2 geteilt. Für die fehlenden Werte der niedrigsten und der höchsten Tagestemperatur haben wir dies ähnlich gemacht und ungefähre Werte geschätzt. Außerdem haben wir die Werte der umliegenden Tage in unserer Schätzung berücksichtigt. Es gab zudem auch einige negative Werte, welche entweder keinen Sinn ergeben haben. Es kann beispielsweise nicht -1 Fahrrad vermietet werden und wenn die niedrigste Temperatur positiv ist, kann die höchste nicht negativ sein.
 Zur Vereinfachung haben wir nun aus der Excel Tabelle insgesamt 3 Tabellen gemacht, um diese dann in die richtigen Datenbank einspielen zu können. In diesen Tabellen haben wir dann auch die noch fehlenden Primärschlüssel definiert. 
-Dann haben wir die Daten mit ".import" in die Datenbanken eingespielt. 
+Dann haben wir die Daten mit (".import") in die Datenbanken eingespielt. 
 
 \subsection{Abfrage der höchsten Durchschnittstemperatur}
 
-Für die Abfrage der höchsten Durchschnittstemperatur benutzen wir die Befehle 
+Für die Abfrage der höchsten Durchschnittstemperatur benutzen wir die folgenden Befehle: 
 
 \begin{figure}[h]
 \centering
@@ -93,9 +93,9 @@ Für die Abfrage der höchsten Durchschnittstemperatur benutzen wir die Befehle
 \label{fig:meine-grafik4}
 \end{figure}
 
-\subsection{Github}
+\section{Github}
 
-Der Latex Code für unser PDF kann auf Github unter folgendem Link gefunden werden.
+Der \LaTeX-Code für unser PDF kann auf Github unter folgendem Link gefunden werden.\\   
 \url{https://github.com/MaximilianLietzau/Abgabeuebung1-Gruppe-21-COMET}
 
 \begin{thebibliography}{9}
